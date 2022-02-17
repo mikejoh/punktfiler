@@ -1,0 +1,11 @@
+plugin:
+  debugger:
+    shortCut: Shift-d
+    description: Debugger
+    scopes:
+    - all
+    command: sh
+    background: false
+    args:
+    - -c
+    - "kubectl run debugger --image=mikejoh/curlpod:latest --namespace=$NAMESPACE --context=$CONTEXT"
