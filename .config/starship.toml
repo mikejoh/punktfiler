@@ -1,0 +1,29 @@
+format = """\
+  $directory\
+  $git_branch\
+  $git_status\
+  $kubernetes\
+  $python\
+  $golang\
+  $line_break\
+  $character\
+  """
+
+[line_break]
+disabled = false
+
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[✖](bold red)"
+
+[time]
+format = '[$time](bold white) '
+disabled = false
+
+[kubernetes]
+disabled = false
+
+[python]
+# Only use the `python3` binary to get the version.
+python_binary = "python3"
+disabled = false
